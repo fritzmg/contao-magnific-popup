@@ -24,9 +24,6 @@
 		"contao/core":"~3.0",
 		"contao-community-alliance/composer-installer":"*"
 	},
-	"autoload": {
-		"classmap": ["src"]
-	},
     "replace": {
         "contao-legacy/magnific_popup": "*"
     }
