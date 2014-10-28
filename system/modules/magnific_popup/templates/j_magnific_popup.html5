@@ -9,7 +9,7 @@ $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/magnific_popup/assets/init-magnifi
 <script>
 jQuery(document).ready(function($){
   initMagnificPopup({
-    // put custom configuration here
+    // put your custom configuration here
   });
 });
 </script>
