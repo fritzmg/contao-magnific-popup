@@ -24,7 +24,7 @@ Refer to the [Magnific Popup Documentation](http://dimsemenov.com/plugins/magnif
 
 ## Types
 
-By default, the extension defines the type for all Magnific Popup instances as `image`. You can set any of the types supported by Magnific Popup in two ways:
+By default, the extension defines the type for all Magnific Popup instances as `image`. You can set any of the types supported by Magnific Popup through several ways:
 
 - through the `data-lightbox` parameter itself, e.g.
 
@@ -43,6 +43,9 @@ By default, the extension defines the type for all Magnific Popup instances as `
   ```html
   <a href="page.html" data-lightbox="" data-mfp-type="iframe">Page</a>
   ```
+
+- by using your own Magnific Popup initialisation
+- by setting the type globally through the options in your own `j_magnific_popup` template
 
 ## Additional Parameters
 
