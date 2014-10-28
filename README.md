@@ -1,7 +1,7 @@
 Contao Magnific Popup
 =====================
 
-Contao extension to integrate the Magnific Popup overlay.
+Contao extension to integrate the [Magnific Popup](https://github.com/dimsemenov/Magnific-Popup) overlay.
 
 ## Usage
 
