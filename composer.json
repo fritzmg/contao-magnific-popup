@@ -26,5 +26,12 @@
 	},
     "replace": {
         "contao-legacy/magnific_popup": "*"
-    }
+    },
+	"extra":{
+		"contao":{
+			"sources":{
+				"system/modules/magnific_popup":"system/modules/magnific_popup"
+			}
+		}
+	}
 }
