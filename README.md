@@ -7,9 +7,7 @@ Contao extension to integrate the [Magnific Popup](https://github.com/dimsemenov
 
 Simply activate the `j_magnific_popup` template in your page layout under _jQuery_. Do _not_ activate `j_colorbox` or `moo_mediabox` as well!
 
-The Magnific Popup will work with all links that use the `data-lightbox="..."` parameter. However, any options like width and height etc. will not work (grouping does still work though).
-
-Of course you can still initialize and manipulate the Magnific Popup via your own JavaScript.
+The Magnific Popup will work with all links that use the `data-lightbox="..."` parameter. Of course you can still initialize and manipulate the Magnific Popup via your own JavaScript.
 
 ## Customizing
 

@@ -21,7 +21,7 @@ function initMagnificPopup( options )
 	// valid types
 	var types = ['image','iframe','inline','ajax'];
 
-	// go through each groups
+	// go through each group
 	$.each( groups, function( index, group ) 
 	{
 		// default options
