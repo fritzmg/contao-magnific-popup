@@ -69,7 +69,6 @@ function initMagnificPopup( options )
 				            '<div class="mfp-close"></div>'+
 				            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
 				          '</div>';
-			console.log(markup);
 			$.extend( settings, { iframe: { markup: markup } } );
 		}
 
