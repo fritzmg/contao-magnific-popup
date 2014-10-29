@@ -36,21 +36,42 @@ function initMagnificPopup( options )
 		// get the elements
 		var $group = $('a[data-lightbox="'+group+'"]');
 
-		// set type if in group name
+		// parse the group name
 		var names = group.split(' ');
+		var width = null;
+		var height = null;
 		$.each( names, function( index, name )
 		{
+			// check for type
 			if( $.inArray( name, types ) !== -1 )
 				$.extend( settings, { type: name } );
+
+			// check for external & social
+			if( name == 'external' || name == 'social' )
+				$.extend( settings, { type: 'iframe' } );
+
+			// check for width and height
+			if( name == parseInt( name, 10 ) )
+			{
+				if( width === null ) width = parseInt( name, 10 );
+				else if( height === null ) height = parseInt( name, 10 );
+			}
 		});
 
-		// set type if present in data
-		if( typeof $group.data('mfp-type') !== 'undefined' )
-			$.extend( settings, { type: $group.data('mfp-type') })
-
-		// set class to wrapper if present in data
-		if( typeof $group.data('mfp-class') !== 'undefined' )
-			$.extend( true, settings, { callbacks: { open: function() { $('.mfp-wrap').addClass( $group.data('mfp-class') ); } } } );
+		// set width and height in markup for iframe
+		if( settings.type == 'iframe' && ( width !== null && height !== null ) )
+		{
+			var style = 'style="position:relative;margin:auto;';
+			if( width !== null ) style += 'max-width:' + width + 'px;';
+			if( height !== null ) style += 'height:' + height + 'px;padding:0;';
+			style += '"';
+			var markup =  '<div class="mfp-iframe-scaler" '+style+'>'+
+				            '<div class="mfp-close"></div>'+
+				            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+				          '</div>';
+			console.log(markup);
+			$.extend( settings, { iframe: { markup: markup } } );
+		}
 
 		// init magnific popup
 		$group.magnificPopup( settings );
