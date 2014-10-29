@@ -38,18 +38,12 @@ By default, the extension defines the type for all Magnific Popup instances as `
   <a href="page.html" data-lightbox="iframe group1">Page</a>
   ```
 
-- through the `data-mfp-type` parameter, e.g.
-
-  ```html
-  <a href="page.html" data-lightbox="" data-mfp-type="iframe">Page</a>
-  ```
-
 - by using your own Magnific Popup initialisation
 - by setting the type globally through the options in your own `j_magnific_popup` template
 
 ## Additional Parameters
 
-I have also added another parameter, which will alow you to inject a custom CSS class to the main wrapper of the overlay:
+To support some compatibility with the old lightbox parameters of Contao, you can also define the width and height of the iframe popup like so:
 ```html
-<a href="page.html" data-lightbox="iframe" data-mfp-class="myClass">Page</a>
+<a href="page.html" data-lightbox="iframe 800 600">Page</a>
 ```
