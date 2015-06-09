@@ -37,7 +37,7 @@ function initMagnificPopup( options )
 		var $group = $('a[data-lightbox="'+group+'"]');
 
 		// parse the group name
-		var names = group.split(' ');
+		var names = group.toString().split(' ');
 		var width = null;
 		var height = null;
 		$.each( names, function( index, name )
