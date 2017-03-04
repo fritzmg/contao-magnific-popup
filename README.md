@@ -13,7 +13,7 @@ The Magnific Popup will work with all links that use the `data-lightbox="..."` p
 
 If you want to use your own custom parameters, simply create your own `j_magnific_popup` template and insert your custom options there. For example, if you want to enable the zoom feature of Magnific Popup:
 ```php
-  ContaoMagnificPopup.ini({
+  ContaoMagnificPopup.init({
     // put your custom configuration here
     zoom: { enabled: true }
   });
