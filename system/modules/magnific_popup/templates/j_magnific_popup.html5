@@ -1,6 +1,7 @@
 <?php
 
 $GLOBALS['TL_CSS'][] = 'system/modules/magnific_popup/assets/magnific-popup.css||static';
+$GLOBALS['TL_CSS'][] = 'system/modules/magnific_popup/assets/magnific-popup-custom.css||static';
 $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/magnific_popup/assets/jquery.magnific-popup.min.js|static';
 $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/magnific_popup/assets/init-magnific-popup.js|static';
 
@@ -8,7 +9,7 @@ $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/magnific_popup/assets/init-magnifi
 
 <script>
 jQuery(document).ready(function($){
-  initMagnificPopup({
+  ContaoMagnificPopup.init({
     // put your custom configuration here
   });
 });
