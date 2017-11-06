@@ -1,3 +1,7 @@
+[![](https://img.shields.io/maintenance/yes/2017.svg)](https://github.com/fritzmg/contao-magnific-popup)
+[![](https://img.shields.io/packagist/v/fritzmg/contao-magnific-popup.svg)](https://packagist.org/packages/fritzmg/contao-magnific-popup)
+[![](https://img.shields.io/packagist/dt/fritzmg/contao-magnific-popup.svg)](https://packagist.org/packages/fritzmg/contao-magnific-popup)
+
 Contao Magnific Popup
 =====================
 
